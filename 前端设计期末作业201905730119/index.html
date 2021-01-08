@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>建党99周年主题展示</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link href="css/style.css" style="text/css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/style3.css" style="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- index-->
+    <nav class="navbar">
+        <div class="container"><a name="#index"><div class="heart"></div></a>
+         <img src="images/logo.png" height="90" width="500">
+         <br><img src="images/separator.png"> 
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle btn-lg" data-toggle="collapse" data-target="#navcollapse">
+                    <span class="glyphicon glyphicon-align-justify"></span>
+                </button>
+            </div>
+            <div id="navcollapse" class="collapse navbar-collapse">
+                <ul class="nav nav-pills" id="navbar">
+                    <li class="active col-xs-12  col-md-3"><a href="#index">首页</a></li>
+                    <li class="col-xs-12 col-md-2"><a href="#about1">网友祝福</a></li>
+                    <li class="col-xs-12 col-md-2"><a href="#about2">实践活动</a></li>
+                    <li class="col-xs-12 col-md-2"><a href="#message">关于我们</a></li>
+                    <li class="col-xs-12 col-md-2"><a href="#message1">跳转页面</a></li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- /idex -->
+    <!-- banner -->
+    <div id="myCarousel" class="carousel slide">
+        <!--第一步：设计轮播图片的容器,用ID和css同时确定。-->
+        <ol class="carousel-indicators">
+            <!--第二步：设计轮播图片计数器。-->
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1">
+            </li>
+            <li data-target="#myCarousel" data-slide-to="2">
+            </li>
+        </ol>
+        <div class="carousel-inner">
+            <!--第三步：设计轮播图片播放区,使用 carousel-inner 样式来控制-->
+            <div class="item active"><img src="images/index1.jpg" ></div>
+            <div class="item"><img src="images/index2.jpg" >
+            </div>
+            <div class="item"><img src="images/index3.jpg" ></div>
+        </div>
+        <!--第四步：设计轮播图片控制器。向前播放 carousel-control left和向后播放的控制器-->
+        <a href="#myCarousel" data-slide="prev" class="carousel-control left">&lsaquo;</a>
+        <a href="#myCarousel" data-slide="next" class="carousel-control right">&rsaquo;</a>
+    </div>
+    <!-- /banner -->
+    <!-- content -->
+    <div class="container">
+        <!-- 最新作品 -->
+        <div class="content picture"><a name="about1"><div></div></a>
+            <h2>网友祝福</h2>网络上收集的 网友们对建党99周年的祝福
+            <div class="content-inner">
+                <div class="col-xs-12 col-md-4">
+                    <img src="images/pro4.jpg">
+
+                </div>
+                <div class="col-xs-12 col-md-4"><img src="images/pro2.jpg">
+
+                </div>
+                <div class="col-xs-12 col-md-4"><img src="images/pro3.jpg">
+
+                </div>
+            </div>
+        </div>
+        <!-- 最新活动 -->
+        <div class="content activity">
+            <a name="about2"><div></div></a><h2>实践活动</h2>通过实践活动对建党99周年的祝福
+            <div class="content-inner">
+                <div class="col-md-4"><img src="images/1.png" width="300" height="300"><br><br>设计宣传手抄报</div>
+                <div class="col-md-4"><img src="images/2.jpg" width="300" height="300"><br><br>举办相关活动班会</div>
+                <div class="col-md-4"><img src="images/3.jpg" width="300" height="300"><br><br>组织相关活动晚会</div>
+            </div>
+        </div>
+        <!-- 互动有礼 -->
+        <div class="content gift"><a name="message"><div></div></a>
+            <h2>关于我们</h2>如果有需要可以通过以下方式联系我们
+            <div class="aboutwm" >
+                <form action="#" method="post"><br><br>
+     All the content published on this website (website address),including text, pictures, audio, video, software, programs, and web page layout design, are collected online.Visitors may use the content or services provided on this website for personal learningresearch or appreciation, as well as other non-commercial or non-profit purposes, but shall comply with the provisions of the copyright Law and other relevant laws, shall not infringe upon the legitimate rights of this website and related right holders.In addition, the use of any content or services on this website for other purposes shall be subject to the written permission of this website and the relevant right holders, and remuneration shall be paid.If the original author of this website is unwilling to publish the content on this website, please inform this site in time and delete it
+            </div>
+        </div>
+        <ul class="nav navbar">
+            <li class="col-xs-12 col-md-12"><br>
+                <a type="button" data-toggle="modal" data-target="#myModal">关于我们<br><br>联系方式>>>微博：咸鱼ouTING&nbsp;&nbsp;微信：OYB1011EXO&nbsp;&nbsp;qq：168287981&nbsp;&nbsp;QQ邮箱：168287981@qq.com</a>
+            </li></ul>
+    </div>
+    <!-- /content -->
+    <!-- footer 模态框组件-->
+    <footer class="container">
+        <div class="snsicon "></div>
+        <ul class="nav navbar">
+            <li class="col-xs-12 col-md-6">
+                <a href="about.html">>>>about页面</a>
+            </li>
+            <a name="message1"><div></div></a>
+            <li class="col-xs-12 col-md-6">
+                <a href="message.html " title=" ">>>>message页面</a>
+            </li>
+        </ul>
+        <div class="snsqrcode "></div>
+        <div class="copyright "></div>
+    </footer>
+    <!-- /footer -->
+    </div>
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js "></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js "></script>
+</body>
+<script>
+$(function() {
+    //第五步：利用ID在JS中启用轮播图，可以设置三个参数interval（轮播切换时间）、pause（默认hover即鼠标悬停时停止播放）、wrap（默认true，持续循环）
+    $('#myCarousel').carousel({
+        interval: 3000,
+    });
+
+    var imgHeight = $('.carousel-inner img').height();
+    //设置垂直居中
+    $('.carousel-control').css('line-height', imgHeight + 'px');
+
+    //设置窗口变化时自动响应垂直居中
+    $(window).resize(function() {
+        var height = $('.carousel-inner img').eq(0).height() || $('.carousel-inner img').eq(1).height() || $('.carousel-inner img').eq(2).height();
+        $('.carousel-control').css('line-height', height + 'px');
+    });
+    //$('#myModal').modal();
+
+});
+
+
+</script>
+
+
+</html>

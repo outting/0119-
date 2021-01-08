@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>建党99周年主题展示</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link href="css/style.css" style="text/css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/style3.css" style="text/css" rel="stylesheet">
+</head>
+
+<body>
+        <div class="content activity">
+            <a name="about2"><div></div></a><h2>作品说明</h2>说明作品页面设计
+            <div class="content-inner">
+                <div class="col-md-4"><img src="images/2.png" width="300" height="300"><br><br>index页面</div>
+                <div class="col-md-4"><img src="images/3.png" width="300" height="300"><br><br>about页面</div>
+                <div class="col-md-4"><img src="images/4.png" width="300" height="300"><br><br>message页面</div>
+            </div>
+        </div>
+        <!-- 互动有礼 -->
+        <div class="content gift"><a name="message"><div></div></a>
+            <h2>课程作业</h2>可点击查看<br><br>
+            <div class="aboutwm" >
+                <a href="怦然心动.html">花式表白</a><br><br>
+                <a href="web.html">星辰大海</a><br><br>
+                <a href="02+CSS3边框+-+小猪乔治+-+stu.html">小猪佩奇</a><br><br>
+    </div>
+    <div class="content gift"><a name="message"><div></div></a>
+            <h2>课程心得</h2>对课程的一些体会<br><br>
+            <div class="aboutwm" >
+                本学期更加熟练css来添加背景，格式文本，以及格式化边框，<br>并定位元素，控制元素的可见性和尺寸，设置元素形状，同时，<br>学习了一些动画效果，完成了本学期的一些动画效果的作业，感觉非常有兴趣
+    </div>
+
+    <!-- /content -->
+    <!-- footer 模态框组件-->
+    <footer class="container">
+        <div class="snsicon "></div>
+        <ul class="nav navbar">
+            <li class="col-xs-12 col-md-6">
+                <a href="index.html" title=" ">>>>index页面</a>
+            </li>
+            <a name="message1"><div></div></a>
+            <li class="col-xs-12 col-md-6">
+                <a href="message.html" title=" ">>>>message页面</a>
+            </li>
+        </ul>
+        <div class="snsqrcode "></div>
+        <div class="copyright "></div>
+    </footer>
+    <!-- /footer -->
+    </div>
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js "></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js "></script>
+</body>
+<script>
+$(function() {
+    //第五步：利用ID在JS中启用轮播图，可以设置三个参数interval（轮播切换时间）、pause（默认hover即鼠标悬停时停止播放）、wrap（默认true，持续循环）
+    $('#myCarousel').carousel({
+        interval: 3000,
+    });
+
+    var imgHeight = $('.carousel-inner img').height();
+    //设置垂直居中
+    $('.carousel-control').css('line-height', imgHeight + 'px');
+
+    //设置窗口变化时自动响应垂直居中
+    $(window).resize(function() {
+        var height = $('.carousel-inner img').eq(0).height() || $('.carousel-inner img').eq(1).height() || $('.carousel-inner img').eq(2).height();
+        $('.carousel-control').css('line-height', height + 'px');
+    });
+    //$('#myModal').modal();
+
+});
+
+
+</script>
+
+
+</html>

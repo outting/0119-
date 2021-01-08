@@ -1,0 +1,209 @@
+@charset "utf-8" body {}
+
+.navbar .container{
+    text-align: center;
+}
+
+.nav-pills li a {
+    font-size: 18px;
+    font-family: "黑体";
+    text-align: center;
+    color: #000;
+}
+
+.nav li.active a,.nav li a:hover {
+    background: #bc0303;
+    color:white;
+}
+
+.carousel-control {
+    font-size: 100px;
+}
+
+.carousel-indicators {
+    position: absolute;
+}
+
+.content {
+    text-align: center;
+    padding: 0;
+}
+
+h2 {
+    line-height: 70px;
+    font-weight: bolder;
+    background-image: url(../images/separator.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    margin-bottom: -5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.content-inner {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.picture {
+    margin-top: 50px;
+}
+
+.activity {}
+.snsicon{
+height: 80px;
+}
+footer{
+    text-align: center;
+}
+body{
+    background: linear-gradient(to bottom, #fefbed 0%,#fae9da 100%);
+}
+.content-inner{
+    background-image: radial-gradient(#c9b8a9 30%, transparent 0);
+    background-size: 50px 50px;
+}
+ .heart{  
+  box-shadow: 10px 10px 30px #ed6a81;
+}  
+body .textcontainer {
+    padding:40px 0;
+}
+body .particletext {
+    font-size:48px;
+    position:relative;
+}
+body .particletext.hearts > .particle {
+    opacity:0;
+    position:absolute;
+    background-color:#cc2a5d;
+    -webkit-animation:hearts 3s ease-in infinite;
+    animation:hearts 3s ease-in infinite;
+}
+body .particletext.hearts > .particle:before,body .particletext.hearts > .particle:after {
+    position:absolute;
+    content:'';
+    border-radius:100px;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    background-color:#cc2a5d;
+}
+body .particletext.hearts > .particle:before {
+    -webkit-transform:translateX(-50%);
+    transform:translateX(-50%);
+}
+body .particletext.hearts > .particle:after {
+    -webkit-transform:translateY(-50%);
+    transform:translateY(-50%);
+}
+@-webkit-keyframes hearts {
+    0% {
+    opacity:0;
+    -webkit-transform:translate(0,0%) rotate(45deg);
+    transform:translate(0,0%) rotate(45deg);
+}
+20% {
+    opacity:0.8;
+    -webkit-transform:translate(0,-20%) rotate(45deg);
+    transform:translate(0,-20%) rotate(45deg);
+}
+100% {
+    opacity:0;
+    -webkit-transform:translate(0,-1000%) rotate(45deg);
+    transform:translate(0,-1000%) rotate(45deg);
+}
+}@keyframes hearts {
+    0% {
+    opacity:0;
+    -webkit-transform:translate(0,0%) rotate(45deg);
+    transform:translate(0,0%) rotate(45deg);
+}
+20% {
+    opacity:0.8;
+    -webkit-transform:translate(0,-20%) rotate(45deg);
+    transform:translate(0,-20%) rotate(45deg);
+}
+100% {
+    opacity:0;
+    -webkit-transform:translate(0,-1000%) rotate(45deg);
+    transform:translate(0,-1000%) rotate(45deg);
+}
+}@keyframes heart {
+    0% {
+    transform:scale(0.8) rotate(45deg);
+    opacity:0.8
+}
+50% {
+    transform:scale(1) rotate(45deg);
+    opacity:1
+}
+100% {
+    transform:scale(0.8) rotate(45deg);
+    opacity:0.8;
+}
+}.heart {
+    width:50px;
+    height:50px;
+    background-color:#cc2a5d;
+    position:relative;
+    margin:30px 30px;
+    transform:rotate(45deg);
+    animation:heart 1s ease-in infinite;
+}
+.heart:after,.heart:before {
+    content:'';
+    width:100%;
+    height:100%;
+    background-color:#cc2a5d;
+    position:absolute;
+    top:0;
+    left:0;
+    border-radius:50%;
+}
+.heart:after {
+    transform:translateY(-50%);
+    box-shadow: 0px -15px 30px #ed6a81;
+}
+.heart:before {
+    transform:translateX(-50%);
+    box-shadow: -15px 5px 30px #ed6a81;
+}
+function initparticles() {
+    hearts();
+}
+
+
+
+function hearts() {
+    $.each($(".particletext.hearts"), function() {
+        var heartcount = ($(this).width() / 50) * 5;
+        for (var i = 0; i <= heartcount; i++) {
+            var size = ($.rnd(60, 120) / 10);
+            $(this).append('<span class="particle" style="top:' + $.rnd(20, 80) + '%; left:' + $.rnd(0, 95) + '%;width:' + size + 'px; height:' + size + 'px;animation-delay: ' + ($.rnd(0, 30) / 10) + 's;"></span>');
+        }
+    });
+}
+
+
+jQuery.rnd = function(m, n) {
+    m = parseInt(m);
+    n = parseInt(n);
+    return Math.floor(Math.random() * (n - m + 1)) + m;
+}
+.msl p{
+    font-size:30px;
+    position:relative;
+    top:-300px;
+    left:530px;
+}
+.mgh p{
+    font-size:30px;
+    position:relative;
+    top:-230px;
+    left:700px;
+}
+initparticles();
